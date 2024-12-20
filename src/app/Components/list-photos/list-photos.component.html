@@ -1,0 +1,6 @@
+<div *ngIf="album">
+  <h2>Photos de {{ album.title }}</h2>
+  <div *ngFor="let photo of album.photos">
+    <img [ngSrc]="photo" alt="Photo" />
+  </div>
+</div>
